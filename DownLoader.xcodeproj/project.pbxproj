@@ -16,6 +16,10 @@
 		7CF6F52924A20AE6007A6B21 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF6F52824A20AE6007A6B21 /* main.m */; };
 		7CF6F53324A20AE6007A6B21 /* DownLoaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF6F53224A20AE6007A6B21 /* DownLoaderTests.m */; };
 		7CF6F53E24A20AE6007A6B21 /* DownLoaderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF6F53D24A20AE6007A6B21 /* DownLoaderUITests.m */; };
+		7CF6F55024A20B6E007A6B21 /* FCTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF6F54F24A20B6E007A6B21 /* FCTool.m */; };
+		7CF6F55324A20B86007A6B21 /* FCDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF6F55224A20B86007A6B21 /* FCDownloadManager.m */; };
+		7CF6F55624A20BA0007A6B21 /* FCDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF6F55524A20BA0007A6B21 /* FCDownloader.m */; };
+		7CF6F55924A20BB5007A6B21 /* TaskModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF6F55724A20BB5007A6B21 /* TaskModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +58,16 @@
 		7CF6F53924A20AE6007A6B21 /* DownLoaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DownLoaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CF6F53D24A20AE6007A6B21 /* DownLoaderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownLoaderUITests.m; sourceTree = "<group>"; };
 		7CF6F53F24A20AE6007A6B21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CF6F54E24A20B6E007A6B21 /* FCTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCTool.h; sourceTree = "<group>"; };
+		7CF6F54F24A20B6E007A6B21 /* FCTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCTool.m; sourceTree = "<group>"; };
+		7CF6F55124A20B86007A6B21 /* FCDownloadManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCDownloadManager.h; sourceTree = "<group>"; };
+		7CF6F55224A20B86007A6B21 /* FCDownloadManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCDownloadManager.m; sourceTree = "<group>"; };
+		7CF6F55424A20BA0007A6B21 /* FCDownloader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCDownloader.h; sourceTree = "<group>"; };
+		7CF6F55524A20BA0007A6B21 /* FCDownloader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCDownloader.m; sourceTree = "<group>"; };
+		7CF6F55724A20BB5007A6B21 /* TaskModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskModel.m; sourceTree = "<group>"; };
+		7CF6F55824A20BB5007A6B21 /* TaskModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskModel.h; sourceTree = "<group>"; };
+		7CF6F55A24A20EF9007A6B21 /* FCCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCCommon.h; sourceTree = "<group>"; };
+		7CF6F55C24A20F8C007A6B21 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,12 +118,17 @@
 		7CF6F51524A20AE2007A6B21 /* DownLoader */ = {
 			isa = PBXGroup;
 			children = (
+				7CF6F54D24A20B56007A6B21 /* Lib */,
 				7CF6F51624A20AE2007A6B21 /* AppDelegate.h */,
 				7CF6F51724A20AE2007A6B21 /* AppDelegate.m */,
 				7CF6F51924A20AE2007A6B21 /* SceneDelegate.h */,
 				7CF6F51A24A20AE2007A6B21 /* SceneDelegate.m */,
 				7CF6F51C24A20AE2007A6B21 /* ViewController.h */,
 				7CF6F51D24A20AE2007A6B21 /* ViewController.m */,
+				7CF6F55824A20BB5007A6B21 /* TaskModel.h */,
+				7CF6F55724A20BB5007A6B21 /* TaskModel.m */,
+				7CF6F55A24A20EF9007A6B21 /* FCCommon.h */,
+				7CF6F55C24A20F8C007A6B21 /* PrefixHeader.pch */,
 				7CF6F51F24A20AE2007A6B21 /* Main.storyboard */,
 				7CF6F52224A20AE6007A6B21 /* Assets.xcassets */,
 				7CF6F52424A20AE6007A6B21 /* LaunchScreen.storyboard */,
@@ -135,6 +154,19 @@
 				7CF6F53F24A20AE6007A6B21 /* Info.plist */,
 			);
 			path = DownLoaderUITests;
+			sourceTree = "<group>";
+		};
+		7CF6F54D24A20B56007A6B21 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				7CF6F54E24A20B6E007A6B21 /* FCTool.h */,
+				7CF6F54F24A20B6E007A6B21 /* FCTool.m */,
+				7CF6F55124A20B86007A6B21 /* FCDownloadManager.h */,
+				7CF6F55224A20B86007A6B21 /* FCDownloadManager.m */,
+				7CF6F55424A20BA0007A6B21 /* FCDownloader.h */,
+				7CF6F55524A20BA0007A6B21 /* FCDownloader.m */,
+			);
+			path = Lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,7 +299,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CF6F55624A20BA0007A6B21 /* FCDownloader.m in Sources */,
 				7CF6F51E24A20AE2007A6B21 /* ViewController.m in Sources */,
+				7CF6F55924A20BB5007A6B21 /* TaskModel.m in Sources */,
+				7CF6F55024A20B6E007A6B21 /* FCTool.m in Sources */,
+				7CF6F55324A20B86007A6B21 /* FCDownloadManager.m in Sources */,
 				7CF6F51824A20AE2007A6B21 /* AppDelegate.m in Sources */,
 				7CF6F52924A20AE6007A6B21 /* main.m in Sources */,
 				7CF6F51B24A20AE2007A6B21 /* SceneDelegate.m in Sources */,
